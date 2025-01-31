@@ -75,10 +75,14 @@ cnx = mysql.connector.connect(**config)
       <label for="sbranch">Branch</label>
       <select class="u-full-width" id="sbranch" name="4" value={{result[0]}}>
         <option value="cse">CSE</option>
-        <option value="ee">EE</option>
+        <option value="eee">EE</option>
         <option value="me">ME</option>
         <option value="ce">CE</option>
-        <option value="mems">MEMS</option>
+        <option value="ai">AI</option>
+        <option value="ec">EC</option>
+        <option value="bt">BT</option>
+        <option value="as">AS</option>
+        <option value="iem">IEM</option>
       </select>
     
   </div>

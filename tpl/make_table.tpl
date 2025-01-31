@@ -5,54 +5,75 @@
 
 
 
-<!--
+
 <style>
-#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
+  .table-container {
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+  }
+
+  table {
     width: 100%;
-}
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+  }
 
-#customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+  th, td {
+    padding: 12px 15px;
     text-align: left;
-    background-color: #4CAF50;
-    color: white;
-}
+    border-bottom: 1px solid #E1E1E1;
+  }
+
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+  }
+
+  td {
+    color: #333;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 1rem;
+    }
+
+    th, td {
+      padding: 8px 10px;
+    }
+  }
 </style>
--->
 
+<div class="table-container">
+  <table>
+    <tr>
+      % for column in columns:
+        <th>{{column}}</th>
+      % end
+    </tr>
+    % for row in rows:
+      <tr>
+        % for cell in row:
+          <td>{{cell}}</td>
+        % end
+      </tr>
+    % end
+  </table>
+</div>
 
-<table id="customers" class="u-full-width">
-  <tr>
-    %for name in columns:
-    %for subname in name:
-      <th>{{subname}}</th>
-      %end
-    %end
-
-   
-
-  </tr>
-  %for row in rows:
-  <tr>
-  %for col in row:
-    <td>{{col}}</td>
-  %end
-  </tr>
-  %end
- 
-</table>
 
     
 

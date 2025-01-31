@@ -25,24 +25,18 @@
 </style>
 -->
 
-
 <table id="customers" class="u-full-width">
   <tr>
     %for name in columns:
-    %for subname in name:
-      <th>{{subname}}</th>
-      %end
+      <th>{{name}}</th> <!-- Access the first element of each list (the column name) -->
     %end
-
-   
-
   </tr>
+
   %for row in rows:
-  <tr>
-  %for col in row:
-    <td>{{col}}</td>
+    <tr>
+      %for col in row:
+        <td>{{col}}</td>
+      %end
+    </tr>
   %end
-  </tr>
-  %end
- 
 </table>

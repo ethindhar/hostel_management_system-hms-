@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <!-- Mirrored from getskeleton.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Oct 2017 16:09:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-
+   <style>
+  body{
+    color: black;
+  }
+</style>
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -41,6 +46,7 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/static/images/favicon.ico">
+
 
 
 

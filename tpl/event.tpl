@@ -1,7 +1,12 @@
 %x=(lolcat!='0')*1
 %y='header{}'.format(x)
 % include(y)
+<style>
 
+#purp3{
+  height: 38px;
+}
+</style>
 <div class="row">
 
 <div class="six columns">
@@ -10,7 +15,7 @@
   <textarea class="u-full-width" id="sroll" name="1" maxlength="190"></textarea>
 
   <label for="purp3">Date and time</label>
-  <input class="u-full-width" type="datetime-local" id="purp3" name="2"/>
+  <input class="u-full-width" type="datetime-local" id="purp3" style="color:black" name="2"/>
 
   <label for="purp">Expenditure</label>
   <input class="u-full-width" type="number" id="purp" max="999999999" name="3"/>

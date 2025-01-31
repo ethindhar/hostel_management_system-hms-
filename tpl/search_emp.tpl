@@ -2,7 +2,61 @@
 %y='header{}'.format(x)
 % include(y)
 
+<style>
+  /* Styles specific to search_student.tpl */
+  .row {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
+  .four.columns {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+  }
+
+  /* Form element styles */
+  .search-form input[type="text"],
+  .search-form input[type="number"],
+  .search-form select,
+  .search-form textarea {
+    width: 100%;
+    min-height: 38px;
+    padding: 6px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+  }
+
+  #ajax_success {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .four.columns {
+      min-width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
 
 
 
